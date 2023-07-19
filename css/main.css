@@ -1,0 +1,371 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&display=swap');
+
+body {
+    margin: 0;
+    background: #09060F;
+    color: #FFFFFF;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+
+/* - - - - - Default Composants Starts - - - - - */
+
+p {
+    font-family: Lexend Zetta;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2, h3 {
+    text-align: center;
+    font-family: Permanent Marker;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.203%; /* 1.84106rem */
+    letter-spacing: 0.07rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    text-align: center;
+    font-family: Lexend Zetta;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105.203%; /* 0.789rem */
+    letter-spacing: -0.045rem;
+}
+
+h5 {
+    text-align: center;
+    font-family: Lexend Zetta;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.0375rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* - - - - - Default Composants  Ends - - - - - */
+
+/* --------------------------------------------------------------- */
+
+/* - - - - - header Starts - - - - - */
+
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    padding: .8em 1.2em;   
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.menu {
+    width: 30px;
+    margin-top: 45%;
+}
+
+header #photo-accueil {
+        position: relative;
+        top: -4rem;
+        left: -10px;
+        z-index: -1;
+}
+
+header #menu {
+    position: relative;
+    top: -1rem;
+}
+
+header h1 {
+    position: absolute;
+    color: #08060f00;
+    top: -4rem;
+}
+
+.subhead {
+    font-size: 0.7rem;
+    position: relative;
+    top: 1.5rem;
+}
+
+/* - - - - - header Ends - - - - - */
+
+/* --------------------------------------------------------------- */
+
+/* - - - - - Class Container Starts - - - - - */
+
+.container {
+    text-align: center;
+    padding: .8em 0.5em;  
+
+}
+
+/* - - - - - Class Container Ends - - - - - */
+
+/* --------------------------------------------------------------- */
+
+/* - - - - - Class menu-accueil Starts - - - - - */
+
+body section {
+    position: relative;
+    top: -2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1em;
+}
+
+.menu-accueil {
+    text-align: center;
+    padding: 0 0.9rem 2rem;;
+    width: 10.0625rem;
+    height: 11.5625rem;
+    background: rgba(223, 223, 218, 1);
+    border-radius: 10px;
+    color: black;
+}
+
+.menu-accueil h3 {
+    width: 8.46625rem;
+    font-size: 1.5rem;
+    line-height: normal;
+    transform: rotate(-0.071deg);
+
+}
+
+#menu-burger h3 {
+    transform: rotate(-0.071deg);
+    margin-top: 0.8rem;
+    line-height: 1em;
+}
+
+#menu-burger p {
+    padding-top: 3px;
+    
+}
+
+#menu-burger h4 {
+    position: relative;
+    bottom: 0.2rem;
+    
+}
+
+#menu-burger img {
+    margin-top: 0rem ;
+}
+
+.menu-accueil img {
+    width: 7.5rem;
+    height: 3.71131rem;    
+    filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.25)) invert(7%);
+}
+
+.menu-accueil p {
+    text-align: center;
+    font-family: 'Lexend Zetta';
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: rotate(0.244deg);
+    margin-top: -1.5rem;
+    margin-left: 2rem;
+    margin-right: 0.813rem;
+}
+
+/* - - - - - Class menu-accueil Ends - - - - - */
+
+/* --------------------------------------------------------------- */
+
+/* - - - - - Class about Starts - - - - - */
+
+.about {
+    margin-top: 15%;
+    padding: 4em 0.5em;
+    text-align: center;
+}
+
+.about #tomate-coupe {
+    position: relative;
+    width: 6.51038rem;
+    height: 4.74531rem;
+    transform: rotate(27.775deg);
+    top:-4rem;
+    left: -6.58rem;
+}
+
+.about h2 {
+    position: relative;
+    width: 11.3125rem;
+    height: 3.25rem;
+    left: 1.06rem;
+    top: -9.5rem;
+}
+
+.about img {
+    position: relative;
+    width: 13.84306rem;
+    height: 20.59263rem;
+    transform: rotate(6.397deg);
+    filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.25)) invert(7%);
+    top:-7rem;
+    left: -1rem;
+}
+
+.about #vector {
+    width: 2.96688rem;
+    height: 2.96688rem;
+    stroke-width: 1px;
+    stroke: #FFF;
+    top: -23.5rem;
+    left: 15.5rem;
+}
+
+.about p {
+    position: relative;
+    width: 18.4375rem;
+    top: -4.55rem;
+    padding-left: 20px;
+    font-size: 0.8rem;
+}
+
+.about #vector-ligne {
+    width: 7.125rem;
+    height: 0.1875rem;
+    transform: rotate(0deg);
+    top: -3.5rem;
+    left: -5rem;
+}
+
+/* - - - - - Class about Ends - - - - - */
+
+/* --------------------------------------------------------------- */
+
+/* - - - - - Class menu-container Starts - - - - - */
+
+.menu-container {
+    image-rendering: auto;
+    background: url(../resources/img/Street_Food_Wallpaper.webp), lightgray -58.529px -768.751px / 116.271% 307.849% no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat:inherit;
+    width: 22.5rem;
+    
+}
+
+.menu-container .carte img {
+    position: relative;
+    width: 12.75rem;
+    filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.25)) invert(7%);
+    top: 1.88rem;
+    left: 4.87rem;
+    margin-bottom: 15%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table thead tr th {
+    min-height: 1rem;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 0.8em 0.5em;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 60%;
+    text-align: left;
+}
+
+th:nth-child(2),
+td:nth-child(2),
+th:nth-child(3),
+td:nth-child(3) {
+    width: 20%;
+    border-left: 0.0625rem solid #CF2723;
+}
+
+.right-side-menu {
+    position: relative;
+    border: none;
+}
+
+.menu-container table h4 {
+    position: relative;
+    top: 2.75rem;
+    left: -3.9rem;
+}
+
+.menu-container table h2 {
+    position: relative;
+    top: 1.4rem;
+    left: -0.5rem;
+    font-size: 1.75rem;
+}
+
+.menu-container table p {
+    font-size: 0.6875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.menu-container p {
+    padding: 0.5rem;
+    font-size: 0.6rem;
+}
+
+#pates-titre {
+    left: -2.5rem;
+
+}
+
+#burgers-titre {
+    left: -1rem;
+}
+
+#kebabs-titre {
+    left: -1.5rem;
+}
+
+#pizzas-titre {
+    left: -1.8rem;
+}
+
+.menu-container table .sandwiches-titres {
+    position: relative;
+    left: 0.5rem;
+}
+
+#tacos-titre {
+    left: -2.2rem;
+}
+
+#menus-titre {
+    left: -1.9rem;
+}
+
+/* - - - - - Class menu-container Ends - - - - - */
