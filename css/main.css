@@ -268,8 +268,7 @@ body section {
     background-position: center;
     background-repeat:inherit;
     width: 22.5rem;
-    margin-bottom: 15%;
-    padding-bottom: 2remgit ;
+    padding-bottom: 2rem;
     
 }
 
@@ -359,6 +358,10 @@ td:nth-child(3) {
     left: 0.5rem;
 }
 
+#pizwitches-img {
+    clip-path: inset(0% 15% 0% 0%);
+}
+
 #tacos-titre {
     left: -2.2rem;
 }
@@ -388,3 +391,25 @@ td:nth-child(3) {
 }
 
 /* - - - - - Class menu-container Ends - - - - - */
+
+/* --------------------------------------------------------------- */
+
+/* - - - - - Footer Starts - - - - - */
+
+footer {
+    background: rgba(223, 223, 223, 1) ;
+    padding: 0.8rem 1.2rem;
+    justify-content: center;
+}
+
+footer img {
+    position: relative;
+    width: 13.0625rem;
+    transform: translate(-7%,-66%);
+    transition: opacity 0.5s;
+    clip-path: inset(70% 0% 0% 0%);
+    top: -1.33rem;
+    left: -1rem;
+}
+
+/* - - - - - Footer Ends - - - - - */
