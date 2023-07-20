@@ -41,7 +41,7 @@ h4 {
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
-     0.789rem
+    0.789rem
     */
     font-family: Lexend Zetta;
     line-height: 105.203%;
@@ -495,49 +495,3 @@ footer a:hover {
 /* - - - - - Footer Ends - - - - - */
 
 /* --------------------------------------------------------------- */
-
-/* - - - - - Responsive Starts - - - - - */
-
-/* Media query for mobile devices (max-width: 600px) 
-@media screen and (max-width: 600px) {
-    .menu-accueil {
-      display: none; /* Hide the menu items by default on mobile devices */
-    }
-}
-/* Optional: To hide the carousel container on larger screens */
-/*@media screen and (min-width: 401px) {
-    #carousel-container {
-    display: none;
-    }
-}
-
-/* Media query for mobile devices (up to 600px) */
-/*@media screen and (max-width: 600px) {
-    .menu-accueil {
-        width: 100%; /* Adjust menu item width for mobile */
-    }
-}
-
-/* Media query for tablets (601px to 768px) */
-/*@media screen and (min-width: 601px) and (max-width: 768px) {
-    .menu-accueil {
-        width: 45%; /* Adjust menu item width for tablets */
-    }
-}
-
-/* Media query for laptops (769px to 1024px) */
-/*@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .menu-accueil {
-        width: 30%; /* Adjust menu item width for laptops */
-    }
-}
-
-/* Media query for big screens (1025px and above) */
-/*@media screen and (min-width: 1025px) {
-    .menu-accueil {
-        width: 20%; /* Adjust menu item width for big screens */
-    }
-}
-
-
-/* - - - - - Responsive Ends - - - - - */
