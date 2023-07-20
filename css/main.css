@@ -47,7 +47,7 @@ h4 {
     line-height: 105.203%;
     letter-spacing: -0.045rem;
     font-size: 1.1rem;
-    margin: 0;
+    margin-top: 20px;
     color: #FFFFFF;
 }
 
@@ -136,6 +136,7 @@ body section {
     flex-wrap: wrap;
     justify-content: center;
     top: -2rem;
+    /*left: 2.8rem;*/
     /*display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -143,6 +144,7 @@ body section {
 }
 
 .menu-accueil {
+    display: inline-block;
     width: 200px;
     text-align: center;
     margin: 15px;
@@ -196,6 +198,17 @@ body section {
 
 }
 
+.carousel-btn {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin-top: 1rem;
+    
+}
+
+#next-button {
+    transform: rotate(180deg);
+}
 /* - - - - - Class menu-accueil Ends - - - - - */
 
 /* --------------------------------------------------------------- */
@@ -316,7 +329,7 @@ td:nth-child(3) {
 
 .right-side-menu h5 {
     font-size: 0.9rem;
-    margin: 0;
+    padding-right: 10px;
 }
 
 .produits-baseline {
@@ -327,11 +340,13 @@ td:nth-child(3) {
 .menu-container table h4 {
     position: relative;
     top: 1.5rem;
+    left: 1Opx;
 }
 
 .menu-container table h2 {
     position: relative;
     top: 0.5rem;
+    left: 1Opx;
     font-size: 1.75rem;
     text-align: left;
 }
@@ -344,45 +359,6 @@ td:nth-child(3) {
     padding: 0.5rem;
 }
 
-/*#pates-titre {
-    left: -2.5rem;
-
-}*/
-
-/*#burgers-titre {
-    left: -1rem;
-}*/
-
-/*#kebabs-titre {
-    left: -1.5rem;
-}*/
-
-/*#pizzas-titre {
-    left: -1.8rem;
-}*/
-
-/*
-.menu-container table .sandwiches-titres {
-    position: relative;
-    left: 0.5rem;
-}
-
-#tacos-titre {
-    left: -2.2rem;
-}
-
-#menus-titre {
-    left: -1.9rem;
-}
-*/
-/*#add-petit-titre {
-    left: -0.25rem;
-}
-
-#add-titre {
-    left: 0;
-}*/
-
 .menu-container .produits-baseline {
     font-size: 0.6rem;
     padding-left:1rem;
@@ -392,6 +368,11 @@ td:nth-child(3) {
     position: relative;
     top: -1.3rem;
     font-size: 0.5rem;
+    
+}
+
+.carte .sandwiches-titres {
+    font-size: 1.6rem;
     
 }
 
@@ -493,6 +474,7 @@ footer a:hover {
 }
 
 #map {
+    position: relative;
     width: 16.25rem;
     height: 3.04719rem;
     border-radius: 2rem;
@@ -502,6 +484,7 @@ footer a:hover {
     font-size: 1.5rem;
     margin-top: 2rem;
     padding-top: 10px;
+    left: 1.2rem;
 }
 
 .juridique {
@@ -510,3 +493,51 @@ footer a:hover {
 }
 
 /* - - - - - Footer Ends - - - - - */
+
+/* --------------------------------------------------------------- */
+
+/* - - - - - Responsive Starts - - - - - */
+
+/* Media query for mobile devices (max-width: 600px) 
+@media screen and (max-width: 600px) {
+    .menu-accueil {
+      display: none; /* Hide the menu items by default on mobile devices */
+    }
+}
+/* Optional: To hide the carousel container on larger screens */
+/*@media screen and (min-width: 401px) {
+    #carousel-container {
+    display: none;
+    }
+}
+
+/* Media query for mobile devices (up to 600px) */
+/*@media screen and (max-width: 600px) {
+    .menu-accueil {
+        width: 100%; /* Adjust menu item width for mobile */
+    }
+}
+
+/* Media query for tablets (601px to 768px) */
+/*@media screen and (min-width: 601px) and (max-width: 768px) {
+    .menu-accueil {
+        width: 45%; /* Adjust menu item width for tablets */
+    }
+}
+
+/* Media query for laptops (769px to 1024px) */
+/*@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .menu-accueil {
+        width: 30%; /* Adjust menu item width for laptops */
+    }
+}
+
+/* Media query for big screens (1025px and above) */
+/*@media screen and (min-width: 1025px) {
+    .menu-accueil {
+        width: 20%; /* Adjust menu item width for big screens */
+    }
+}
+
+
+/* - - - - - Responsive Ends - - - - - */
