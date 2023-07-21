@@ -131,10 +131,11 @@ header h1 {
 /* - - - - - Class menu-accueil Starts - - - - - */
 
 body section {
-    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
     top: -2rem;
 }
 
@@ -172,13 +173,18 @@ body section {
 
 .carousel-btn {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     width: 75%;
     margin-top: 1rem;
     
 }
 
 #next-button {
+    position: relative;
+    margin: 0;
+    bottom: 3px;
     transform: rotate(180deg);
 }
 /* - - - - - Class menu-accueil Ends - - - - - */
