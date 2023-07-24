@@ -73,12 +73,6 @@ ul {
 
 /* - - - - - header Starts - - - - - */
 
-nav {
-    display: flex;
-    justify-content: flex-end; 
-    padding: .8em 1.2em;   
-}
-
 .hide-mobile {
     display: none;
 }
@@ -104,6 +98,46 @@ header h1 {
     position: absolute;
     color: #08060f00;
     top: -4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    padding: .8em 1.2em;   
+}
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36, 41, 44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(52, 59, 63);
+}
+
+nav ul li a:hover {
+    background-color: rgb(57, 64, 67);
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img {
+    width: 15px;
 }
 
 .subhead {
@@ -134,42 +168,6 @@ header img {
 /* --------------------------------------------------------------- */
 
 /* - - - - - Class menu-accueil Starts - - - - - */
-
-/* Style the menu section */
-@media screen and (max-width: 600px) {
-    #carousel-container {
-        /*display: flex;
-        justify-content: center;
-        overflow: hidden;*/
-        overflow: hidden;
-        position: relative;
-        top: -2rem;
-    }
-
-    .carousel-slides {
-        display: flex;
-        transition: transform 0.3s ease;
-    }
-
-    .menu-accueil {
-        flex: 0 0 83%;
-    }
-
-}
-
-/* Styles for menu display on larger devices */
-@media screen and (min-width: 601px) {
-    #carousel-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 20px;
-    }
-    .menu-accueil {
-      flex-basis: calc(33.33% - 40px); /* Adjust this value as needed */
-    }
-}
-
 
 
   /* Style each menu item container */
@@ -232,7 +230,7 @@ header img {
     /*margin-top: 5em;*/
 }
 
-#slide-position {
+#slide-position *{
     position: relative;
     margin-top: -0.4rem;
 }
@@ -524,3 +522,53 @@ footer a:hover {
 /* - - - - - Footer Ends - - - - - */
 
 /* --------------------------------------------------------------- */
+
+/* - - - - - - - - - Carousel displays and Responsive Starts - - - - -  - - - - */
+
+/* Style the menu section */
+@media screen and (max-width: 600px) {
+    #carousel-container {
+        /*display: flex;
+        justify-content: center;
+        overflow: hidden;*/
+        overflow: hidden;
+        position: relative;
+        top: -2rem;
+    }
+
+    .carousel-slides {
+        display: flex;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-accueil {
+        flex: 0 0 83%;
+    }
+
+}
+
+/* Styles for menu display on larger devices */
+@media screen and (min-width: 601px) {
+    #carousel-container {
+        display: block; /* Show slides one aside the other */
+        height: calc(100vh / 3); /* 1/3 of screen height */
+    }
+    
+    .carousel-slides {
+        white-space: normal; /* Allow slides to stack vertically */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu-accueil {
+        display: block;
+        margin: 20px; /* Add gap between slides */
+    }
+    
+    #carousel-btn {
+        display: none; /* Hide the carousel buttons on bigger screens */
+    }
+}
+/* - - - - - - - - - Carousel displays and Responsive Ends - - - - -  - - - - */
+
