@@ -110,6 +110,11 @@ header h1 {
     font-size: 0.7rem;
     position: relative;
     top: 1.5rem;
+    margin-bottom: 15%;
+}
+
+header img {
+    width: 100%;
 }
 
 /* - - - - - header Ends - - - - - */
@@ -130,54 +135,87 @@ header h1 {
 
 /* - - - - - Class menu-accueil Starts - - - - - */
 
-body section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    top: -2rem;
+/* Style the menu section */
+@media screen and (max-width: 600px) {
+    #carousel-container {
+        /*display: flex;
+        justify-content: center;
+        overflow: hidden;*/
+        overflow: hidden;
+        position: relative;
+        top: -2rem;
+    }
+
+    .carousel-slides {
+        display: flex;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-accueil {
+        flex: 0 0 83%;
+    }
+
 }
 
+/* Styles for menu display on larger devices */
+@media screen and (min-width: 601px) {
+    #carousel-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    .menu-accueil {
+      flex-basis: calc(33.33% - 40px); /* Adjust this value as needed */
+    }
+}
+
+
+
+  /* Style each menu item container */
 .menu-accueil {
     width: 200px;
     text-align: center;
     margin: 15px;
-    padding: 0rem 0.9rem 2rem;
+    padding: 0rem 0.9rem 4rem;
     height: 11.5625rem;
     background: rgba(223, 223, 218, 1);
     border-radius: 10px;
     color: black;
 }
 
+  /* Style the food item names */
 .menu-accueil h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
-    transform: rotate(-0.071deg);
-
 }
 
-.menu-accueil img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;    
-    filter: drop-shadow(7px 16px 25px rgba(0, 0, 0, 0.25)) invert(4%);
-}
-
+  /* Style the food description */
 .menu-accueil p {
     font-size: 0.9rem;
     margin: 0;
-
 }
 
-.carousel-btn {
+  /* Style the food images */
+.menu-accueil img {
+    width: 90%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+  /* Style the prices */
+.menu-accueil h4 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #000000;
+}
+
+#carousel-btn {
+    position: relative;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 75%;
-    margin-top: 1rem;
     
 }
 
@@ -187,6 +225,19 @@ body section {
     bottom: 3px;
     transform: rotate(180deg);
 }
+
+#prev-button,
+#next-button {
+    cursor: pointer;
+    /*margin-top: 5em;*/
+}
+
+#slide-position {
+    position: relative;
+    margin-top: -0.4rem;
+}
+
+
 /* - - - - - Class menu-accueil Ends - - - - - */
 
 /* --------------------------------------------------------------- */

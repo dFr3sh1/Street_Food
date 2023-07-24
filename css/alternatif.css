@@ -1,0 +1,104 @@
+@media screen and (max-width:600px) {
+    section #carousel-container * {
+        /*display: inline-block;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        display: block;*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .carousel-slides {
+        display: flex;
+        /*overflow-x: scroll; /* Allow horizontal scroll on mobile*/
+        /*scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+        /*gap: 20px;*/
+        transition: transform 0.3s ease;
+    }
+    
+}
+
+
+/* Styles for menu display on larger devices */
+@media screen and (min-width: 601px) {
+    #carousel-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    .menu-accueil {
+      flex-basis: calc(33.33% - 40px); /* Adjust this value as needed */
+    }
+}
+
+
+.menu-accueil {
+    width: 200px;
+    text-align: center;
+    margin: 15px;
+    padding: 0rem 0.9rem 2rem;
+    height: 11.5625rem;
+    background: rgba(223, 223, 218, 1);
+    border-radius: 10px;
+    color: black;
+    /*flex: 0 0 calc(100% - 20px); /* Slide width with 20px gap */
+    scroll-snap-align: start;
+}
+
+.menu-accueil h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    transform: rotate(-0.071deg);
+
+}
+
+.menu-accueil img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;    
+    filter: drop-shadow(7px 16px 25px rgba(0, 0, 0, 0.25)) invert(4%);
+}
+
+.menu-accueil p {
+    font-size: 0.9rem;
+    margin: 0;
+
+}
+
+.carousel-btn * {
+    /*display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    margin-top: 1rem;*/
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+#next-button {
+    position: relative;
+    margin: 0;
+    bottom: 3px;
+    transform: rotate(180deg);
+}
+
+#prev-button,
+#next-button {
+    cursor: pointer;
+    margin-top: 5em;
+}
+
+#carousel-position {
+    display: inline-block;
+    margin: 0 40px;
+    color: white;
+    font-size: 0.8rem;
+}
