@@ -7,21 +7,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let currentSlide = 0;
   let isCarouselEnabled = false;
+  let intervalId; // Variable to store the interval ID
 
-   // Show the carousel controls (buttons and position indicator) on mobile
+ // Show the carousel controls (buttons and position indicator) on mobile
   const carouselControls = document.getElementById("carousel-btn");
 
   // Function to enable the carousel
   function enableCarousel() {
     carouselControls.style.display = "flex";
     isCarouselEnabled = true;
-    setInterval(nextSlide, 3000); // Start the carousel by moving to the next slide every 3 seconds
+    clearInterval(intervalId); // Clear any existing interval
+    intervalId = setInterval(nextSlide, 3000); // Start the carousel by moving to the next slide every 3 seconds
   }
 
   // Function to disable the carousel
   function disableCarousel() {
     carouselControls.style.display = "none";
     isCarouselEnabled = false;
+    clearInterval(intervalId); // Clear the interval
   }
 
   // Function to update the slide position indicator
@@ -57,9 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to check if the device is a mobile device
   function checkDeviceWidth() {
     if (window.innerWidth <= 768) { // Change 768 to the desired breakpoint for mobile devices
-      enableCarousel();
+      if (!isCarouselEnabled) {
+        enableCarousel();
+      }
     } else {
-      disableCarousel();
+      if (isCarouselEnabled) {
+        disableCarousel();
+      }
       showSlide(); // Show the first slide for larger devices without the carousel
     }
   }
@@ -67,6 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial check of the device width
   checkDeviceWidth();
 
-  // Optional: Add an event listener to update the carousel behavior when the window is resized
+  // Add an event listener to update the carousel behavior when the window is resized
   window.addEventListener("resize", checkDeviceWidth);
 });
