@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const slidePosition = document.getElementById("slide-position");
 
   let currentSlide = 0;
+  let visibleSlides = 5; // Number of slides visible at a time on larger screens
   let isCarouselEnabled = false;
   let intervalId; // Variable to store the interval ID
-
- // Show the carousel controls (buttons and position indicator) on mobile
-  const carouselControls = document.getElementById("carousel-btn");
+   // Show the carousel controls (buttons and position indicator) on mobile
+    const carouselControls = document.getElementById("carousel-btn");
 
   // Function to enable the carousel
   function enableCarousel() {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to disable the carousel
   function disableCarousel() {
-    carouselControls.style.display = "none";
+    carouselControls.style.display = "flex";
     isCarouselEnabled = false;
     clearInterval(intervalId); // Clear the interval
   }
@@ -33,23 +33,27 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Function to show the current slide and hide the rest
-  function showSlide() {
+  function showSlides(startIndex) {
     slides.forEach((slide, index) => {
-      slide.style.display = index === currentSlide ? "inline-block" : "none";
+      if (index >= startIndex && index < startIndex + visibleSlides) {
+        slide.style.display = "inline-block";
+      } else {
+        slide.style.display = "none";
+      }
     });
   }
 
   // Function to move to the next slide
   function nextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
-    showSlide();
+    showSlides(currentSlide);
     updateSlidePosition();
   }
 
   // Function to move to the previous slide
   function prevSlide() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide();
+    showSlides(currentSlide);
     updateSlidePosition();
   }
 
@@ -57,17 +61,20 @@ document.addEventListener("DOMContentLoaded", function () {
   nextButton.addEventListener("click", nextSlide);
   prevButton.addEventListener("click", prevSlide);
 
-  // Function to check if the device is a mobile device
+  // Function to check the device width and set the visibleSlides variable accordingly
   function checkDeviceWidth() {
-    if (window.innerWidth <= 768) { // Change 768 to the desired breakpoint for mobile devices
-      if (!isCarouselEnabled) {
-        enableCarousel();
-      }
-    } else {
-      if (isCarouselEnabled) {
-        disableCarousel();
-      }
-      showSlide(); // Show the first slide for larger devices without the carousel
+    if (window.innerWidth <= 768) { // Mobile devices in portrait mode (up to tablet size)
+      visibleSlides = 1;
+      showSlides(currentSlide); // Show the current slide on mobile (1 slide at a time)
+      enableCarousel(); // Enable carousel on mobile
+    } else if (window.innerWidth <= 1024) { // Tablet devices
+      visibleSlides = 3;
+      showSlides(currentSlide); // Show 3 slides on tablets
+      enableCarousel(); // Enable carousel on tablets
+    } else { // Larger screens
+      visibleSlides = 5;
+      showSlides(0); // Show all slides at once on larger screens
+      disableCarousel(); // Disable carousel on larger screens
     }
   }
 
