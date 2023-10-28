@@ -167,105 +167,127 @@ header img {
 
 /* --------------------------------------------------------------- */
 
-/* - - - - - Class menu-accueil Starts - - - - - */
+/* - - - - - Class swiper Starts - - - - - */
 
 #carousel-container {
-    display: flex;
+/* Id avant swiper */
+    /*display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 10px;
-    margin-top: -2em;
+    margin-top: -2em;*/
 }
 
-.carousel-slides {
-    /* Ensure images take up full width */
-    width: 100%;
+.container .wide {
+    max-width: 100%;
+    padding: 0 2rem;
+}
+
+.swiper-wrapper {
+/* Ensure images take up full width */
+    /*width: 100%;
     overflow: hidden;
-    /*white-space: nowrap;*/
+    white-space: nowrap;*/
+    
 }
 
 
   /* Style each menu item container */
-.menu-accueil {
-    display: flex;
+.swiper-slide {
+/* Class avant swiper .menu-accueil */
+    /*display: flex;
     flex-direction: column;
     width: 200px;
     text-align: center;
     margin: 15px;
-    padding: 0rem 0.9rem 4rem;
+    
     height: 11.5625rem;
+    */
+    margin: 0;
     background: rgba(223, 223, 218, 1);
     border-radius: 10px;
     color: black;
+    padding: 0rem 0rem 1rem;
+
 }
 
   /* Style the food item names */
-.menu-accueil h3 {
+.swiper-slide h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
 
   /* Style the food description */
-.menu-accueil p {
+.swiper-slide p {
     font-size: 0.9rem;
     margin: 0;
 }
 
   /* Style the food images */
-.menu-accueil img {
-    width: 100%;
+.swiper-slide img {
+    display: flex;
+    width: 90%;
     height: 150px;
     object-fit: cover;
     border-radius: 5px;
+    margin: 1rem 1rem;
 }
 
   /* Style the prices */
-.menu-accueil h4 {
+.swiper-slide h4 {
     font-size: 1.1rem;
     margin: 0;
-    color: #000000;
+    color:#000000;
 }
 
-#carousel-btn {
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
+.swiper-custom-nav {
     position: relative;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.carousel-controls {
-  /* Center the buttons and position indicator */
+    transform: translateY(20%);
+    left: 0;
+    z-index: 10;
+    width: 100%;
     display: flex;
-    align-items: center;
-    width: 80%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-
-
-#next-button {
-    position: relative;
-    margin: 0;
-    bottom: 3px;
-    transform: rotate(180deg);
-}
-
-#prev-button,
-#next-button {
+.swiper-custom-nav svg {
     cursor: pointer;
-    /*margin-top: 5em;*/
+    opacity: .6;
+    transition: all .3s ease-in-out;
+    width: 40px;
 }
 
-#slide-position *{
-    position: relative;
-    margin-top: -0.4rem;
+.swiper-custom-nav svg:hover {
+    opacity: 1;
+
 }
 
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
 
-/* - - - - - Class menu-accueil Ends - - - - - */
+.swiper-pagination .swiper-pagination-bullet {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+    text-align: center;
+}
+
+.swiper-pagination .number {
+    opacity: 0.2;
+    transition: all .3s ease-in-out;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active .number {
+    opacity: 1;
+}
+
+/* - - - - - Class swiper Ends - - - - - */
 
 /* --------------------------------------------------------------- */
 
