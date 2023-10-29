@@ -295,9 +295,23 @@ header img {
 /* - - - - - Class about Starts - - - - - */
 
 .about {
-    margin-top: 15%;
     padding: 4em 0.5em;
     text-align: center;
+    height: auto;
+    margin-bottom: 7rem;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#about-tomate-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .about #tomate-coupe {
@@ -305,16 +319,15 @@ header img {
     width: 6.51038rem;
     height: 4.74531rem;
     transform: rotate(27.775deg);
-    top:-4rem;
-    left: -6.58rem;
+    left: 6rem;
+    top: 0;
 }
 
 .about h2 {
     position: relative;
     width: 11.3125rem;
     height: 3.25rem;
-    left: 1.06rem;
-    top: -9.5rem;
+    left: -5rem;
 }
 
 .about img {
@@ -323,8 +336,8 @@ header img {
     height: 20.59263rem;
     transform: rotate(6.397deg);
     filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.25)) invert(7%);
-    top:-7rem;
-    left: -1rem;
+    top: 3rem;
+    left: -2rem;
 }
 
 .about #vector {
@@ -332,15 +345,14 @@ header img {
     height: 2.96688rem;
     stroke-width: 1px;
     stroke: #FFF;
-    top: -23.5rem;
-    left: 15.5rem;
+    top: -14rem;
+    left: 15rem;
 }
 
 .about p {
     position: relative;
-    width: 18.4375rem;
-    top: -4.55rem;
-    padding-left: 20px;
+    width: 100%;
+    top: 5rem;
     font-size: 0.8rem;
 }
 
@@ -348,7 +360,7 @@ header img {
     width: 7.125rem;
     height: 0.1875rem;
     transform: rotate(0deg);
-    top: -3.5rem;
+    top: 6rem;
     left: -5rem;
 }
 
