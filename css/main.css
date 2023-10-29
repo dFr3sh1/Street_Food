@@ -1,20 +1,21 @@
-
-
-
 body {
     margin: 0;
     background: #09060F;
     color: #FFFFFF;
     font-family: 'Lexend Zetta', sans-serif;
-    font-family: 'Permanent Marker', cursive;
+    box-sizing: border-box;
 
+}
+
+:root {
+    font-family: 'Lexend Zetta', sans-serif;
 }
 
 
 /* - - - - - Default Composants Starts - - - - - */
 
 p {
-    font-family: Lexend Zetta;
+    font-family: 'Lexend Zetta';
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -23,7 +24,7 @@ p {
 
 h2, h3 {
     text-align: center;
-    font-family: Permanent Marker;
+    font-family: 'Permanent Marker';
     font-size: 2rem;
     font-style: normal;
     font-weight: 400;
@@ -43,7 +44,7 @@ h4 {
     font-weight: 500;
     0.789rem
     */
-    font-family: Lexend Zetta;
+    font-family: 'Lexend Zetta';
     line-height: 105.203%;
     letter-spacing: -0.045rem;
     font-size: 1.1rem;
@@ -53,7 +54,7 @@ h4 {
 
 h5 {
     text-align: center;
-    font-family: Lexend Zetta;
+    font-family: 'Lexend Zetta';
     font-size: 0.625rem;
     font-style: normal;
     font-weight: 400;
@@ -83,6 +84,7 @@ ul {
 }
 
 header #photo-accueil {
+        object-fit: cover;
         position: relative;
         top: -4rem;
         left: -10px;
@@ -250,14 +252,18 @@ header img {
     justify-content: space-between;
 }
 
-.swiper-custom-nav svg {
+.swiper-custom-nav img {
+    width: 40px;
+}
+
+.swiper-custom-nav .carousel-btn {
     cursor: pointer;
     opacity: .6;
     transition: all .3s ease-in-out;
     width: 40px;
 }
 
-.swiper-custom-nav svg:hover {
+.swiper-custom-nav .carousel-btn:hover {
     opacity: 1;
 
 }
@@ -389,6 +395,18 @@ table {
     margin-bottom: 20px;
 }
 
+table th p.table-th-title {
+    text-align: start;
+    font-family: 'Permanent Marker';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    /*line-height: 105.203%; /* 1.84106rem */
+    /*letter-spacing: 0.07rem;*/
+}
+
 th:nth-child(1),
 td:nth-child(1) {
     width: 60%;
@@ -412,19 +430,19 @@ td:nth-child(3) {
 
 .produits-baseline {
     font-size: 0.8rem;
-    color: #777777;
+    color: #F6F6F6;
 }
 
 .menu-container table h4 {
     position: relative;
     top: 1.5rem;
-    left: 1Opx;
+    left: 0.0625rem;
 }
 
 .menu-container table h2 {
     position: relative;
     top: 0.5rem;
-    left: 1Opx;
+    left: 0.0625rem;
     font-size: 1.75rem;
     text-align: left;
 }
@@ -483,7 +501,7 @@ footer img {
 }
 
 #titre-footer {
-    font-family: Meie Script;
+    font-family: 'Meie Script';
     font-size: 4rem;
     font-style: normal;
     font-weight: 400;
@@ -566,7 +584,7 @@ footer a:hover {
 }
 
 .juridique {
-    font-family: Lexend Zetta;
+    font-family: 'Lexend Zetta';
     font-size: 0.7rem;
 }
 

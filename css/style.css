@@ -49,7 +49,7 @@
     }
 
     .carousel-slides {
-         white-space: normal; /* Allow slides to stack vertically */
+        white-space: normal; /* Allow slides to stack vertically */
         display: flex;
         align-items: center;
         justify-content: center;
