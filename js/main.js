@@ -14,7 +14,8 @@ const swiper = new Swiper('.swiper', {
 
   // Responsive breakpoints
   breakpoints: {
-    768: {
+    
+    600: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
@@ -56,12 +57,3 @@ const swiper = new Swiper('.swiper', {
 // Show the carousel controls (buttons and position indicator) on mobile
 const carouselControls = document.getElementById('carousel-btn');
 carouselControls.style.display = 'flex';
-
-const element = document.getElementById('carousel-btn');
-
-if (element) {
-  // The element exists, so you can safely access its style property.
-  element.style.display = 'block';
-} else {
-  // The element does not exist, so you should not try to access its style property.
-}

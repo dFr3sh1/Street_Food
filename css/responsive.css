@@ -1,10 +1,7 @@
-@media screen and (max-width:600px) {
+@media screen and (min-width:600px) {
+
+
     section #carousel-container * {
-        /*display: inline-block;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        display: block;*/
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -19,7 +16,79 @@
         /*gap: 20px;*/
         transition: transform 0.3s ease;
     }
+
+    .swiper-custom-nav {
+        z-index: 0;
+        padding: 2em 0;
+        justify-content: space-around;
+    }
+
+    .swiper-pagination-bullets {
+        bottom: 25px;
+    }
     
+    .subhead {
+        top: 5em;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about h2 {
+        left: -11rem;
+    }
+
+    .about #vector {
+        top: -3.5rem;
+        left: 7.5rem;
+    }
+
+    .about p {
+        padding-left: 0;
+        width: 90%;
+    }
+
+    .about #vector-line {
+        left: auto;
+        top: -2rem;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .menu-container ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-food {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-food img {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .menu-container .product-baseline {
+        font-size: 0.8rem;
+    }
+
+
 }
 
 
