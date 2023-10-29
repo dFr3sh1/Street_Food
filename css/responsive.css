@@ -88,6 +88,17 @@
         font-size: 0.8rem;
     }
 
+    footer #map {
+        width: auto;
+        left: 0;
+        text-decoration: none;
+    }
+
+    footer #map:hover {
+        background-color: #d9100b;
+        color: #F6F6F6;
+    }
+
 
 }
 
