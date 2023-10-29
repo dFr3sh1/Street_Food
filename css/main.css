@@ -285,6 +285,7 @@ header img {
 }
 
 .swiper-pagination .number {
+    font-family: 'Permanent Marker';
     opacity: 0.2;
     transition: all .3s ease-in-out;
 }
