@@ -54,7 +54,7 @@
     }
 
     .about #vector-line {
-        left: auto;
+        left: -16rem;
         top: 7rem;
     }
 
