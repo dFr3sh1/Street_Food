@@ -74,6 +74,13 @@ ul {
 
 /* - - - - - header Starts - - - - - */
 
+
+header {
+    box-sizing: border-box;
+    height: 184px;
+}
+
+
 .hide-mobile {
     display: none;
 }
