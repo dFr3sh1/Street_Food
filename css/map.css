@@ -2,7 +2,6 @@ body {
     margin: 0;
     background: url(../resources/img/Metro_Street_Food.webp) no-repeat center center fixed;
     background-size: cover;
-    height: 100%;
     overflow: hidden;
     color: #FFFFFF;
     font-family: 'Lexend Zetta', sans-serif;
