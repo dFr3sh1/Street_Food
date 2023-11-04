@@ -18,7 +18,7 @@ p {
     font-family: 'Lexend Zetta';
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     line-height: normal;
 }
 
@@ -554,6 +554,10 @@ footer img {
 }
 
 footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
     width: 100%;
     margin: 0 30px 0 30px;
 }
@@ -622,6 +626,8 @@ footer a:hover {
 }
 
 .juridique {
+    width: 100%;
+    padding: 20px 0;
     font-family: 'Lexend Zetta';
     font-size: 0.7rem;
 }
