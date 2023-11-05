@@ -611,6 +611,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer a:active {
+    text-decoration: none;
+}
+
 #map {
     position: relative;
     width: 90%;
