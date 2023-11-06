@@ -486,7 +486,7 @@ td:nth-child(3) {
 }
 
 .menu-container table p {
-    font-size: 0.6875rem;
+    font-size: 0.7875rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -501,7 +501,7 @@ td:nth-child(3) {
 .menu-container .pizza-description {
     position: relative;
     top: -1.3rem;
-    font-size: 0.5rem;
+    font-size: 0.65rem;
     
 }
 
@@ -517,12 +517,14 @@ td:nth-child(3) {
 /* - - - - - Footer Starts - - - - - */
 
 footer {
-    background-color: rgba(223, 223, 223, 1);
-    padding: 13px 0;
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    background-color: rgba(223, 223, 223, 1);
+    padding: 13px 0;
     color: #53565A;
 }
 
@@ -550,7 +552,6 @@ footer img {
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: 1px;
     margin-top: -2em;
-    margin-left: -0.6em;
 }
 
 footer div {
@@ -558,8 +559,17 @@ footer div {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    width: 90%;
+}
+
+footer #follow-us {
+    align-items: center;
+}
+
+footer #socialnet {
     width: 100%;
-    margin: 0 30px 0 30px;
+    align-items: flex-start;
+    line-height: 1.8rem;
 }
 
 footer h2 {
@@ -583,6 +593,7 @@ footer a {
     color: #CF2723;
     text-decoration: none;
     margin-right: 10px;
+    font-size: 16px;
 }
 
 footer a[href="map.html"] {
@@ -627,7 +638,6 @@ footer a:active {
     font-size: 1.5rem;
     margin-top: 2rem;
     padding-top: 10px;
-    left: 1.1rem;
 }
 
 .juridique {
@@ -639,6 +649,7 @@ footer a:active {
 
 #rules {
     padding: 20px 0;
+    align-items: center;
 }
 
 /* - - - - - Footer Ends - - - - - */
