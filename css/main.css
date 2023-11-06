@@ -571,6 +571,7 @@ footer h2 {
 
 footer p {
     margin-bottom: 30px;
+    font-weight: 400;
 }
 
 footer div:nth-child(3) p {
