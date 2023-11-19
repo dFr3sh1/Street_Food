@@ -49,7 +49,7 @@ h4 {
     letter-spacing: -0.045rem;
     font-size: 1.1rem;
     margin-top: 20px;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
 }
 
 h5 {
@@ -103,7 +103,7 @@ header #menu {
     top: -1rem;
 }
 
-header h1 {
+.header--main-title {
     position: absolute;
     color: #08060f00;
     top: -4rem;
@@ -115,33 +115,33 @@ nav {
     padding: .8em 1.2em;   
 }
 
-nav ul {
-    position: fixed;
-    width: 50%;
-    top: 0;
-    right: 0;
-    text-align: left;
-    background: rgb(64 70 74);
-    height: 64%;
-    z-index: 7;
-    padding-top: 3em;
-}
+    .nav-ul {
+        position: fixed;
+        width: 50%;
+        top: 0;
+        right: 0;
+        text-align: left;
+        background: rgb(64 70 74);
+        height: 64%;
+        z-index: 7;
+        padding-top: 3em;
+    }
 
-nav ul li {
-    background-color: rgb(97 106 111);
-    margin: auto;
-    padding-left: 1em;
-    padding-bottom: 1em;
-}
+        .nav-ul--li {
+            background-color: rgb(97 106 111);
+            margin: auto;
+            padding-left: 1em;
+            padding-bottom: 1em;
+        }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    padding: 0.5em 0.5em;
-    
-}
+        .nav-ul--a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            padding: 0.5em 0.5em;
+            
+        }
 
 nav ul li:hover {
     background-color: rgb(57, 64, 67);
@@ -199,7 +199,7 @@ header img {
     padding: 0 2rem;
 }
 
-  /* Style each menu item container */
+/* Style each menu item container */
 .swiper-slide {
 /* Class avant swiper .menu-accueil */
     /*display: flex;
@@ -632,7 +632,7 @@ footer a:active {
     width: 90%;
     height: 3.04719rem;
     border-radius: 2rem;
-    background: #AD0804;
+    background: rgb(173, 8, 5);
     color: #FFFFFF;
     text-align: center;
     font-size: 1.5rem;

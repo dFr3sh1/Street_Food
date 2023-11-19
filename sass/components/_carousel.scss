@@ -1,0 +1,15 @@
+#carousel-container {
+    /* Center the carousel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add a gap between the carousel and screen edges */
+    padding: 0 10px;
+}
+
+.carousel-slides {
+    /* Ensure images take up full width */
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
