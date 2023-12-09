@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th p.table-th-title {
+    text-align: start;
+    font-family: $title-font;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    /*line-height: 105.203%; /* 1.84106rem */
+    /*letter-spacing: 0.07rem;*/
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 60%;
+    text-align: left;
+    padding:10px;
+}
+
+th:nth-child(2),
+td:nth-child(2),
+th:nth-child(3),
+td:nth-child(3) {
+    width: 20%;
+    border-left: 0.0625rem solid $brand-color;
+    padding: 10px;
+}

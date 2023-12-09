@@ -14,13 +14,13 @@
 </head>
 <body>
     <div class="container" >
-        <header>
+        <header class="l-header">
             <nav>
                 <a href="#" class="hide-desktop">
                     <img src="resources/img/ham.svg" alt="Toggle menu" class="menu" id="menu">
                 </a>                
                 <ul class="show-desktop hide-mobile nav-ul" id="nav">
-                    <li id="exit" class="exit-btn hide-desktop"><img src="resources/img/exit_icon.svg" alt="Exit menu" ></li>
+                    <li id="exit" class="exit-btn hide-desktop"><img class="exit-btn--img" src="resources/img/exit_icon.svg" alt="Exit menu" ></li>
                     <li class="nav-ul--li"><a class="nav-ul--a" href="#"></a>ACCUEIL</li>
                     <li class="nav-ul--li"><a class="nav-ul--a" href="#"></a>ASSIETTES</li>
                     <li class="nav-ul--li"><a class="nav-ul--a" href="#"></a>BURGERS</li>
@@ -30,7 +30,7 @@
                     <li class="nav-ul--li"><a class="nav-ul--a" href="#"></a>MENUS</li>
                 </ul>
             </nav>
-            <img src="resources/img/Street_Food.webp" alt="Photo blanc et noir de la façade du restaurant Street Food" id="photo-accueil">
+            <img src="resources/img/Street_Food.webp" alt="Photo blanc et noir de la façade du restaurant Street Food" class="header-img header-img--photo-accueil">
             <h1 class="header--main-title">Street Food</h1>
         </header>
         <section id="carousel-container"><!--div id="carousel-container"></div-->
@@ -85,27 +85,27 @@
         </div>
     </div>
     <div class="about">
-        <div id="about" > 
-            <div id="about-tomate-title">
-                <img src="resources/img/Tomate_Coupe_Street_Food.webp" alt="Tomate coupé" id="tomate-coupe">
-                <h2>À PROPOS</h2>
+        <div class="about-title-position" > 
+            <div class="about-tomate-title">
+                <img class="about-tomate-slice" src="resources/img/Tomate_Coupe_Street_Food.webp" alt="Tomate coupé">
+                <h2 class="about-title">À PROPOS</h2>
             </div>
             <div></div>
         </div>
-        <div id="about-kebeb-pic">
-            <img src="resources/img/Angle_photo_about_mobil.svg" alt="Vector angle photo Rollo Kebab Street Food" id="vector">
-            <img src="resources/img/Rollo_Kebab_unsplash_eDTqOGCdtCw.webp" alt="Grille Kebab Street Food à l'extérieur">
-            <p>Découvrez l'authenticité de Street Food, oasis de saveurs au cœur du Vieux Lille. Notre chef, fort de 20 d'expérience en cuisine orientale, 
+        <div class="about-kebeb-pic">
+            <img class="vector" src="resources/img/Angle_photo_about_mobil.svg" alt="Vector angle photo Rollo Kebab Street Food">
+            <img class="photo-rollo-kebab" src="resources/img/Rollo_Kebab_unsplash_eDTqOGCdtCw.webp" alt="Grille Kebab Street Food à l'extérieur">
+            <p class="introduction">Découvrez l'authenticité de Street Food, oasis de saveurs au cœur du Vieux Lille. Notre chef, fort de 20 d'expérience en cuisine orientale, 
                 vous invite à un festin de saverus inégalé. Explorez notre site, éveillez vos papilles, et plongez dans un monde de délices où la tradition rencontre la modernité. 
                 Bienvenue dans l'univers gourmand de Street Food </p>
         </div>
-        <img src="resources/img/Line_A_propos_Mobil.svg" alt="Vector ligne de légende de Street Food" id="vector-line">
+        <img class="vector-line" src="resources/img/Line_A_propos_Mobil.svg" alt="Vector ligne de légende de Street Food" >
     </div>
-    <div class="menu-container">
+    <div class="l-menu-container">
         <ul>
             <li>
                 <div class="menu-food" id="assiettes">
-                    <img src="resources/img/Assiette_Royal_Street_Food.webp" alt="Assiette Royal Street Food">
+                    <img class="menu-food-img" src="resources/img/Assiette_Royal_Street_Food.webp" alt="Assiette Royal Street Food">
                     <table>
                         <thead>
                             <tr>
@@ -217,7 +217,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="couscous">
-                    <img src="resources/img/Couscous_Street_Food.webp" alt="Couscous merguez Street Food">
+                    <img class="menu-food-img" src="resources/img/Couscous_Street_Food.webp" alt="Couscous merguez Street Food">
                     <table>
                         <thead>
                             <tr>
@@ -283,7 +283,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="kapsalon">
-                    <img src="resources/img/Kapsalon_Street_Food.webp" alt="Barquette Kapsalon Street Food">
+                    <img class="menu-food-img" src="resources/img/Kapsalon_Street_Food.webp" alt="Barquette Kapsalon Street Food">
                     <table>
                         <thead>
                             <tr>
@@ -317,7 +317,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="pates">
-                    <img src="resources/img/Pates_Poulet_Street_Food.webp" alt="Pâtes au poulet Street Food">
+                    <img class="menu-food-img" src="resources/img/Pates_Poulet_Street_Food.webp" alt="Pâtes au poulet Street Food">
                     <table>
                         <thead>
                             <tr>
@@ -405,7 +405,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="burgers">
-                    <img src="resources/img/Menu_Burger_Boeuf_Street_Food.webp" alt="Menu Burger 1 steak Street Food">
+                    <img class="menu-food-img" src="resources/img/Menu_Burger_Boeuf_Street_Food.webp" alt="Menu Burger 1 steak Street Food">
                     <table>
                         <thead>
                             <tr>
@@ -460,7 +460,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="boxes">
-                    <img src="resources/img/Box_Kebab_Street_Food.webp" alt="Box Kebab Street Food">
+                    <img class="menu-food-img" src="resources/img/Box_Kebab_Street_Food.webp" alt="Box Kebab Street Food">
                     <table>
                         <thead>
                             <tr>
@@ -504,7 +504,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="galettes">
-                    <img src="resources/img/Menu_Kebab_Galette_Street_Food.webp" alt="Menu galette kebab Street Food">
+                    <img class="menu-food-img" src="resources/img/Menu_Kebab_Galette_Street_Food.webp" alt="Menu galette kebab Street Food">
                     <table>
                         <thead>
                             <tr>
@@ -559,7 +559,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="kebabs">
-                    <img src="resources/img/Menu_Kebab_Street_Food.webp" alt="Menu Kebab Street Food">
+                    <img class="menu-food-img" src="resources/img/Menu_Kebab_Street_Food.webp" alt="Menu Kebab Street Food">
                     <table>
                         <thead>
                             <tr>
@@ -603,7 +603,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="pizzas">
-                    <img src="resources/img/Pizza_4_Fromages_Street_Food.webp" alt="Pizza 4 fromages Street Food">
+                    <img class="menu-food-img" src="resources/img/Pizza_4_Fromages_Street_Food.webp" alt="Pizza 4 fromages Street Food">
                     <table>
                         <thead>
                             <tr>
@@ -781,7 +781,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="pizwitches">
-                    <img src="resources/img/Menu_Pizwitch_Oriental_Street_Food.webp" alt="Menu pizwitch oriental Street Food" id="pizwitches-img">
+                    <img class="menu-food-img" src="resources/img/Menu_Pizwitch_Oriental_Street_Food.webp" alt="Menu pizwitch oriental Street Food" id="pizwitches-img">
                     <table>
                         <thead>
                             <tr>
@@ -899,7 +899,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="sandwiches-chauds">
-                    <img src="resources/img/Sandwiche_Chaud_Poulet_Marine_Street_Food.webp" alt="Sandwich poulet mariné Street Food">
+                    <img class="menu-food-img" src="resources/img/Sandwiche_Chaud_Poulet_Marine_Street_Food.webp" alt="Sandwich poulet mariné Street Food">
                     <p>CHAUDS</p>
                     <table>
                         <thead>
@@ -988,7 +988,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="sanwiches-froids">
-                    <img src="resources/img/Sandwich_Jambon_Fromge_Street_Food.webp" alt="Sandwich jambon fromage Street Food">
+                    <img class="menu-food-img" src="resources/img/Sandwich_Jambon_Fromge_Street_Food.webp" alt="Sandwich jambon fromage Street Food">
                     <p>FROIDS</p>
                     <table>
                         <thead>
@@ -1077,7 +1077,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="tacos">
-                    <img src="resources/img/Tacos_Street_Food.webp" alt="Sandwich jambon fromage Street Food">
+                    <img class="menu-food-img" src="resources/img/Tacos_Street_Food.webp" alt="Sandwich jambon fromage Street Food">
                     <p>COMPOSEZ LE VOTRE</p>
                     <table>
                         <thead>
@@ -1122,7 +1122,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="menus">
-                    <img src="resources/img/Menu_Enfant_Street_Food.webp" alt="Menu Enfant, nuggets, frites et caprisun Street Food">
+                    <img class="menu-food-img" src="resources/img/Menu_Enfant_Street_Food.webp" alt="Menu Enfant, nuggets, frites et caprisun Street Food">
                     <table>
                         <thead>
                             <tr>
@@ -1170,7 +1170,7 @@
                     <p class="menu-baseline">Pour plus d'ingrédients merci de regarder la menu-food des additionnels.</p>
                 </div>
                 <div class="menu-food" id="additionnels">
-                    <img src="resources/img/Desserts_Tiramisu_Et_Tarte_Au_Pomme_Street_Food.webp" alt="Desserts, tiramisu et tarte au pomme Street Food">
+                    <img class="menu-food-img" src="resources/img/Desserts_Tiramisu_Et_Tarte_Au_Pomme_Street_Food.webp" alt="Desserts, tiramisu et tarte au pomme Street Food">
                     <h3>DESSERTS</h3>
                     <table>
                         <thead>
@@ -1258,12 +1258,12 @@
         </ul>
     </div>
     <footer>
-        <div>
-            <img src="resources/img/Steak_Grille_Street_Food.webp" alt="Steak grillé Street Food">
-            <h2 id="titre-footer" >Street Food</h2>
-            <h2>KEBAB</h2>
+        <div class="footer-div">
+            <img class="footer-img" src="resources/img/Steak_Grille_Street_Food.webp" alt="Steak grillé Street Food">
+            <h2 class="footer-title" >Street Food</h2>
+            <h2 class="footer-title footer-title--kebab" >KEBAB</h2>
         </div>
-        <div id="contact">
+        <div class="footer-div contact">
             <p class="adresse">Street Food <br>
             Lille, <br>
             France</p>
@@ -1272,8 +1272,8 @@
             Lundi au Vendredi 11:00 à 23:00 <br>
             Samedi, Dimanche et Fériés 11:00 à 23:00</p>
         </div>
-        <div id="follow-us">
-            <div id="socialnet">
+        <div class="footer-div follow-us">
+            <div class="socialnet">
                 <p>SUIS-NOUS</p>
                 <a href="#" >Facebook</a>
                 <a href="#" >Instagram</a>

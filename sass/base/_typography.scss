@@ -1,7 +1,52 @@
-/**
- * Basic typography style for copy text
- */
+/* Basic typography style for copy text */
+
 body {
 color: $text-color;
 font: normal 125% / 1.4 $text-font-stack;
+font-family: $text-font-stack;
 }
+
+/* Basic style h2, h3, h4 and h5 */
+
+h2, h3, h4, h5, p {
+    text-align: center;
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.203%; /* 1.84106rem */
+    letter-spacing: 0.07rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    margin-top: 20px;
+
+    color: rgb(255, 255, 255);
+
+    font-family: $text-font-stack;
+    line-height: 105.203%;
+    letter-spacing: -0.045rem;
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 0.625rem;
+    line-height: normal;
+    letter-spacing: -0.0375rem;
+}
+
+
+/* Basic style for paragraphes*/
+p {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: normal;
+}
+

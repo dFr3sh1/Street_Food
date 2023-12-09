@@ -28,3 +28,35 @@
 @function font($path, $base: $base-url) {
     @return asset($base, 'fonts/', $path);
 }
+
+$base-font-size: 16px!default; 
+
+
+///Function to extrait the unit and allow the number to be used in calculations.
+/// @uthor css-tricks.com/snipets/sass/strip-unit-functions
+/// @ccess public.
+/// @parame (Size) $number element's size
+@function strip-unit ($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1); 
+    }
+    @return $number;
+}
+
+///Function to calculate the size in rem.
+/// @uthor grafikart.
+/// @ccess public 
+/// @param (size) $size element's size.
+/// @param (size) $base default's size elemen.
+@function rem($size, $base: $base-font-size) {
+    @return 1rem * $size / strip-unit($base);
+}
+
+///Function to calculate the size in em.
+/// @uthor grafikart.
+/// @ccess public 
+/// @param (size) $size element's size.
+/// @param (size) $base default's size elemen.
+@function rem($size, $base: $base-font-size) {
+    @return 1em * $size / strip-unit($base);
+}

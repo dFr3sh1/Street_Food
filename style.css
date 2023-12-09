@@ -1,3 +1,1193 @@
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+  background: #09060F;
+  color: #FFFFFF;
+}
 
+body {
+  /* Already in _base.scss*/
+  margin: 0;
+  box-sizing: border-box;
+  background: #09060F;
+  color: #FFFFFF;
+  font-family: "Lexend Zetta", sans-serif;
+}
+
+/**
+* Make all elements from the DOM inherit from the parent box-sizing
+* Since `*` has a specificity of 0, it does not override the `html` value
+* making all elements inheriting from the root box-sizing value
+* See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+
+
+/**
+* Basic styles for ul
+*/
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/**
+* Basic styles for links
+*/
+a {
+  color: rgb(173, 8, 5);
+  text-decoration: none;
+}
+a:hover, a:active, a:focus, a:focus-within {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+/* Basic typography style for copy text */
+body {
+  color: rgb(255, 255, 255);
+  font: normal 125%/1.4 "Lexend Zetta", sans-serif;
+  font-family: "Lexend Zetta", sans-serif;
+}
+
+/* Basic style h2, h3, h4 and h5 */
+h2, h3, h4, h5, p {
+  text-align: center;
+  font-family: "Permanent Marker", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105.203%; /* 1.84106rem */
+  letter-spacing: 0.07rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "Lexend Zetta", sans-serif;
+  line-height: 105.203%;
+  letter-spacing: -0.045rem;
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.625rem;
+  line-height: normal;
+  letter-spacing: -0.0375rem;
+}
+
+/* Basic style for paragraphes*/
+p {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: normal;
+}
+
+#btn-carousel {
+  display: none;
+  /* Adjust positioning as needed */
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.exit-btn {
+  margin-top: -1.3em;
+  padding-top: 1.4em;
+  padding-right: 1.4em;
+  text-align: right;
+}
+
+#carousel-container {
+  /* Center the carousel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Add a gap between the carousel and screen edges */
+  padding: 0 10px;
+}
+
+.carousel-slides {
+  /* Ensure images take up full width */
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Hide the previous and next buttons initially (will be shown using JS) */
+#carousel-btn {
+  display: none;
+  /* Adjust positioning as needed */
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-controls {
+  /* Center the buttons and position indicator */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slide-position {
+  /* Style your slide position indicator as needed */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th p.table-th-title {
+  text-align: start;
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  /*line-height: 105.203%; /* 1.84106rem */
+  /*letter-spacing: 0.07rem;*/
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 60%;
+  text-align: left;
+  padding: 10px;
+}
+
+th:nth-child(2),
+td:nth-child(2),
+th:nth-child(3),
+td:nth-child(3) {
+  width: 20%;
+  border-left: 0.0625rem solid rgb(173, 8, 5);
+  padding: 10px;
+}
+
+.about {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 7rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  padding: 0.8em 0.5em;
+  text-align: center;
+}
+
+.wide {
+  max-width: 100%;
+  padding: 0 2rem;
+}
+
+footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(223, 223, 223);
+  padding: 13px 0;
+  color: #53565A;
+}
+
+header {
+  box-sizing: border-box;
+  height: 184px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.8em 1.2em;
+}
+
+.l-menu-container {
+  box-sizing: border-box;
+  padding: 10px;
+  image-rendering: auto;
+  background: url(../resources/img/Street_Food_Wallpaper.webp), lightgray -58.529px -768.751px/116.271% 307.849% no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: inherit;
+  /*width: 22.5rem;*/
+  padding-bottom: 2rem;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+========================================================================== */
+/**
+* 1. Correct the line height in all browsers.
+* 2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+    ========================================================================== */
+/**
+* Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+* Render the `main` element consistently in IE.
+*/
+main {
+  display: block;
+}
+
+/**
+* Correct the font size and margin on `h1` elements within `section` and
+* `article` contexts in Chrome, Firefox, and Safari.
+*/
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+    ========================================================================== */
+/**
+* 1. Add the correct box sizing in Firefox.
+* 2. Show the overflow in Edge and IE.
+*/
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+    ========================================================================== */
+/**
+* Remove the gray background on active links in IE 10.
+*/
+a {
+  background-color: transparent;
+}
+
+/**
+* 1. Remove the bottom border in Chrome 57-
+* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+*/
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+* Add the correct font weight in Chrome, Edge, and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+* Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+* Prevent `sub` and `sup` elements from affecting the line height in
+* all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+    ========================================================================== */
+/**
+* Remove the border on images inside links in IE 10.
+*/
+img {
+  border-style: none;
+}
+
+/* Forms
+    ========================================================================== */
+/**
+* 1. Change the font styles in all browsers.
+* 2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+* Show the overflow in IE.
+* 1. Show the overflow in Edge.
+*/
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+* Remove the inheritance of text transform in Edge, Firefox, and IE.
+* 1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+* Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+* Remove the inner border and padding in Firefox.
+*/
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+* Restore the focus styles unset by the previous rule.
+*/
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+* Correct the padding in Firefox.
+*/
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+* 1. Correct the text wrapping in Edge and IE.
+* 2. Correct the color inheritance from `fieldset` elements in IE.
+* 3. Remove the padding so developers are not caught out when they zero out
+*    `fieldset` elements in all browsers.
+*/
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+* Add the correct vertical alignment in Chrome, Firefox, and Opera.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+* Remove the default vertical scrollbar in IE 10+.
+*/
+textarea {
+  overflow: auto;
+}
+
+/**
+* 1. Add the correct box sizing in IE 10.
+* 2. Remove the padding in IE 10.
+*/
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+* Correct the cursor style of increment and decrement buttons in Chrome.
+*/
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+* 1. Correct the odd appearance in Chrome and Safari.
+* 2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+* Remove the inner padding in Chrome and Safari on macOS.
+*/
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+* 1. Correct the inability to style clickable types in iOS and Safari.
+* 2. Change font properties to `inherit` in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+    ========================================================================== */
+/*
+* Add the correct display in Edge, IE 10+, and Firefox.
+*/
+details {
+  display: block;
+}
+
+/*
+* Add the correct display in all browsers.
+*/
+summary {
+  display: list-item;
+}
+
+/* Misc
+    ========================================================================== */
+/**
+* Add the correct display in IE 10+.
+*/
+template {
+  display: none;
+}
+
+/**
+* Add the correct display in IE 10.
+*/
+[hidden] {
+  display: none;
+}
+
+/* Style each menu item container */
+.swiper-slide {
+  /* Class avant swiper .menu-accueil */
+  /*display: flex;
+  flex-direction: column;
+  width: 200px;
+  text-align: center;
+  margin: 15px;
+
+  height: 11.5625rem;
+  */
+  margin: 0;
+  background: rgb(223, 223, 218);
+  border-radius: 10px;
+  color: black;
+  padding: 0rem 0rem 1rem;
+}
+
+/* Style the food item names */
+.swiper-slide h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Style the food description */
+.swiper-slide p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Style the food images */
+.swiper-slide img {
+  display: flex;
+  width: 90%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 1rem 1rem;
+}
+
+/* Style the prices */
+.swiper-slide h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #000000;
+}
+
+.swiper-custom-nav {
+  position: relative;
+  transform: translateY(20%);
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-custom-nav img {
+  width: 40px;
+}
+
+.swiper-custom-nav .carousel-btn {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+  width: 40px;
+}
+
+.swiper-custom-nav .carousel-btn:hover {
+  opacity: 1;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background-color: transparent;
+  opacity: 1;
+  text-align: center;
+}
+
+.swiper-pagination .number {
+  font-family: "Permanent Marker";
+  opacity: 0.2;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active .number {
+  opacity: 1;
+}
+
+/* - - - - - Default Composants Starts - - - - - */
+/* - - - - - Default Composants  Ends - - - - - */
+/* --------------------------------------------------------------- */
+/* - - - - - header Starts - - - - - */
+.hide-mobile {
+  display: none;
+}
+
+.menu {
+  width: 30px;
+  margin-top: 45%;
+}
+
+.header-img--photo-accueil {
+  display: flex;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  top: -4rem;
+  left: -10px;
+  flex: 1;
+  z-index: -1;
+}
+
+header #menu {
+  position: relative;
+  top: -1rem;
+}
+
+.header--main-title {
+  position: absolute;
+  top: -4rem;
+  color: rgba(8, 6, 15, 0);
+}
+
+.nav-ul {
+  position: fixed;
+  width: 50%;
+  height: 64%;
+  top: 0;
+  right: 0;
+  padding-top: 3em;
+  z-index: 7;
+  background: rgb(64, 70, 74);
+  text-align: left;
+}
+
+.nav-ul--li {
+  margin: auto;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  background-color: rgb(97, 106, 111);
+}
+
+.nav-ul--a {
+  display: block;
+  width: 100%;
+  padding: 0.5em 0.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-ul--li:hover {
+  background-color: rgb(57, 64, 67);
+}
+
+.exit-bt--img {
+  width: 15px;
+  cursor: pointer;
+}
+
+.subhead {
+  box-sizing: border-box;
+  padding: 10px 40px;
+  margin-bottom: 15%;
+  position: relative;
+  top: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+/* - - - - - header Ends - - - - - */
+/* --------------------------------------------------------------- */
+/* - - - - - Class Container Starts - - - - - */
+/* - - - - - Class Container Ends - - - - - */
+/* --------------------------------------------------------------- */
+/* - - - - - Class swiper Starts - - - - - */
+/* - - - - - Class swiper Ends - - - - - */
+/* --------------------------------------------------------------- */
+/* - - - - - Class about Starts - - - - - */
+.about-title-position {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about-tomate-title {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-tomate-slice {
+  object-fit: contain;
+  height: 5rem;
+  left: auto;
+  top: 0rem;
+}
+
+.about-title {
+  position: absolute;
+  left: 2rem;
+}
+
+.about-kepab-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.photo-rollo-kebab {
+  position: relative;
+  flex: 1;
+  width: auto;
+  height: 20.59263rem;
+  transform: rotate(6.397deg);
+  filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.25)) invert(7%);
+  top: 4rem;
+  left: -4rem;
+}
+
+.vector {
+  position: relative;
+  width: 2.96688rem;
+  height: 2.96688rem;
+  stroke-width: 1px;
+  stroke: #FFF;
+  top: -13rem;
+  left: 15rem;
+}
+
+.introduction {
+  box-sizing: border-box;
+  padding: 10px 12px;
+  position: relative;
+  width: 100%;
+  font-size: 0.8rem;
+  top: 6rem;
+  line-height: 1.2rem;
+  text-align: left;
+  font-weight: 100;
+}
+
+.vector-line {
+  width: 7.125rem;
+  height: 0.1875rem;
+  transform: rotate(0deg);
+  top: 8rem;
+  left: auto;
+  display: none;
+}
+
+/* - - - - - Class about Ends - - - - - */
+/* --------------------------------------------------------------- */
+/* - - - - - Class menu-container Starts - - - - - */
+.menu-food {
+  text-align: center;
+}
+
+.menu-food-img {
+  width: 75%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*filter: drop-shadow(16px 16px 20px rgba(202, 224, 5, 0.17)) invert(2%);*/
+}
+
+.menu-baseline {
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  color: #F6F6F6;
+}
+
+.pizza-description {
+  position: relative;
+  top: -1.3rem;
+  font-size: 0.65rem;
+}
+
+.sandwiches-titres {
+  font-size: 1.6rem;
+}
+
+/* - - - - - Class menu-container Ends - - - - - */
+/* --------------------------------------------------------------- */
+/* - - - - - Footer Starts - - - - - */
+.footer-img {
+  position: relative;
+  width: 13.0625rem;
+  transform: translate(-7%, -66%);
+  transition: opacity 0.5s;
+  clip-path: inset(70% 0% 0% 0%);
+  top: -1.33rem;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-family: "Meie Script";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.16rem;
+  transform: rotate(-12.556deg);
+  color: #53565A;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-width: 1px;
+  margin-top: -2em;
+}
+
+.footer-title--kebab {
+  position: relative;
+  top: 10vh;
+  font-family: "Permanent Marker";
+  font-size: 6rem;
+  margin-bottom: 1.3em;
+  -webkit-text-stroke-color: transparent;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.follow-us {
+  align-items: center;
+}
+
+.socialnet {
+  width: 100%;
+  align-items: flex-start;
+  line-height: 1.8rem;
+}
+
+footer p {
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+footer div:nth-child(3) p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: #CF2723;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+footer a[href="map.html"] {
+  color: #CF2723;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: #777777;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:active {
+  text-decoration: none;
+}
+
+#map {
+  position: relative;
+  width: 90%;
+  height: 3.04719rem;
+  border-radius: 2rem;
+  background: rgb(173, 8, 5);
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 10px;
+}
+
+.juridique {
+  width: 100%;
+  padding: 20px 0;
+  font-family: "Lexend Zetta";
+  font-size: 0.7rem;
+}
+
+#rules {
+  padding: 20px 0;
+  align-items: center;
+}
+
+/* - - - - - Footer Ends - - - - - */
+/* --------------------------------------------------------------- */
+/* - - - - - - - - - Carousel displays and Responsive Starts - - - - -  - - - - */
+/* - - - - - - - - - Carousel displays and Responsive Ends - - - - -  - - - - */
+@media screen and (min-width: 600px) {
+  section #carousel-container * {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .carousel-slides {
+    display: flex;
+    /*overflow-x: scroll; /* Allow horizontal scroll on mobile*/
+    /*scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    /*gap: 20px;*/
+    transition: transform 0.3s ease;
+  }
+  .swiper-custom-nav {
+    z-index: 0;
+    padding: 2em 0;
+    justify-content: space-around;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 25px;
+  }
+  .subhead {
+    top: 5em;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .about h2 {
+    left: -4rem;
+  }
+  .about #vector {
+    top: 6.5rem;
+    left: 7.5rem;
+  }
+  .about p {
+    padding-left: 0;
+    width: 90%;
+  }
+  .about #vector-line {
+    left: -16rem;
+    top: 7rem;
+  }
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .menu-container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu-food {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu-food img {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .menu-container .product-baseline {
+    font-size: 0.8rem;
+  }
+  footer img {
+    width: 16rem;
+    transform: translate(-7%, -50%);
+    clip-path: inset(53% 0% 0% 0%);
+    border-radius: 0%;
+  }
+  footer #map {
+    width: auto;
+    left: 0;
+    text-decoration: none;
+  }
+  footer #map:hover {
+    background-color: #d9100b;
+    color: #F6F6F6;
+  }
+  footer #rules {
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+}
+/* Styles for wider screens (disable the carousel) */
+@media (min-width: 768px) {
+  #carousel-container {
+    display: block; /* Show slides one aside the other */
+    height: 33.3333333333vh; /* 1/3 of screen height */
+  }
+  .carousel-slides {
+    white-space: normal; /* Allow slides to stack vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+  }
+  .menu-accueil {
+    display: block;
+    margin: 20px; /* Add gap between slides */
+  }
+  #carousel-btn {
+    display: none; /* Hide the carousel buttons on wider screens */
+  }
+  /* Additional styles to remove carousel behavior on wider screens */
+  #carousel-container .swiper-wrapper {
+    display: flex;
+  }
+}
+/* Styles for menu display on larger devices */
+@media screen and (min-width: 1024px) {
+  #carousel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  .menu-accueil {
+    flex-basis: calc(33.33% - 40px); /* Adjust this value as needed */
+  }
+  footer #map {
+    width: 50%;
+    left: 22%;
+  }
+}
+.menu-accueil {
+  width: 200px;
+  text-align: center;
+  margin: 15px;
+  padding: 0rem 0.9rem 2rem;
+  height: 11.5625rem;
+  background: rgb(223, 223, 218);
+  border-radius: 10px;
+  color: black;
+  /*flex: 0 0 calc(100% - 20px); /* Slide width with 20px gap */
+  scroll-snap-align: start;
+}
+
+.menu-accueil h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  transform: rotate(-0.071deg);
+}
+
+.menu-accueil img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  filter: drop-shadow(7px 16px 25px rgba(0, 0, 0, 0.25)) invert(4%);
+}
+
+.menu-accueil p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.carousel-btn * {
+  /*display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+  margin-top: 1rem;*/
+  text-align: center;
+  margin-top: 10px;
+}
+
+#next-button {
+  position: relative;
+  margin: 0;
+  bottom: 3px;
+  transform: rotate(180deg);
+}
+
+#prev-button,
+#next-button {
+  cursor: pointer;
+  margin-top: 5em;
+}
+
+#carousel-position {
+  display: inline-block;
+  margin: 0 40px;
+  color: white;
+  font-size: 0.8rem;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -12,6 +12,19 @@ html {
     color: #FFFFFF;
 }
 
+body { 
+    /* Already in _base.scss*/
+    margin: 0;
+    box-sizing: border-box;
+
+    background: #09060F;
+    color: #FFFFFF;
+
+    font-family: $text-font-stack;
+    
+}
+
+
 /**
 * Make all elements from the DOM inherit from the parent box-sizing
 * Since `*` has a specificity of 0, it does not override the `html` value
@@ -25,6 +38,20 @@ html {
 }
 
 /**
+
+
+/**
+* Basic styles for ul
+*/
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+
+/**
 * Basic styles for links
 */
 a {
@@ -36,3 +63,6 @@ a {
         text-decoration: underline;
 }
 }
+
+
+
