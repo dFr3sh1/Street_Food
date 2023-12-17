@@ -923,6 +923,7 @@ header #menu {
 }
 
 footer p {
+  width: 100%;
   margin-bottom: 30px;
   font-weight: 400;
   text-align: left;
@@ -1052,14 +1053,15 @@ footer a:active {
   .menu-container .product-baseline {
     font-size: 0.8rem;
   }
+  .footer-div {
+    align-items: center;
+  }
   .footer-img {
     width: 15.0625rem;
     transform: translate(-7%, -47%);
     clip-path: inset(50% 0% 0% 0%);
     margin-top: -1.33rem;
-  }
-  .footer-title {
-    margin-left: 7rem;
+    margin-left: -30%;
   }
   footer #map {
     text-decoration: none;
