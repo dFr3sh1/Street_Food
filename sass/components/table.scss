@@ -7,7 +7,7 @@ table {
 table th p.table-th-title {
     text-align: start;
     font-family: $title-font;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-style: normal;
     font-weight: 400;
     margin: 0;
@@ -30,4 +30,7 @@ td:nth-child(3) {
     width: 20%;
     border-left: 0.0625rem solid $brand-color;
     padding: 10px;
+}
+td p:nth-child(1) {
+    text-align: left;
 }

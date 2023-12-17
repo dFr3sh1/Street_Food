@@ -10,11 +10,14 @@ font-family: $text-font-stack;
 
 h2, h3, h4, h5, p {
     text-align: center;
-    font-family: $title-font;
     font-style: normal;
     font-weight: 400;
     line-height: 105.203%; /* 1.84106rem */
     letter-spacing: 0.07rem;
+}
+
+h2, h3, h4, h5 {
+    font-family: $title-font;
 }
 
 h2 {
