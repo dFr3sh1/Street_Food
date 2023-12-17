@@ -113,7 +113,7 @@ header #menu {
     padding: 10px 40px;
     margin-bottom: 15%;
     position: relative;
-    top: 1.5rem;
+    margin-top: 1.5rem;
     
     font-size: 0.8rem;
     font-weight: 100;
@@ -207,7 +207,7 @@ header #menu {
     position: relative;
     width: 100%;
     font-size: 0.8rem;
-    top: 6rem;
+    margin-top: 6rem;
     line-height: 1.2rem;
     text-align: left;
     font-weight: 100;
@@ -249,6 +249,10 @@ header #menu {
     color: #F6F6F6;
 }
 
+.plat-name {
+    text-align: left;
+}
+
 .pizza-description {
     position: relative;
     margin-top: -0.7rem;
@@ -275,7 +279,7 @@ header #menu {
     transform: translate(-7%,-66%);
     transition: opacity 0.5s;
     clip-path: inset(70% 0% 0% 0%);
-    top: -1.33rem;
+    margin-top: -1.33rem;
     height: auto;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -327,6 +331,7 @@ header #menu {
 footer p {
     margin-bottom: 30px;
     font-weight: 400;
+    text-align: left;
 }
 
 footer div:nth-child(3) p {
@@ -376,13 +381,18 @@ footer a:active {
     position: relative;
     width: 90%;
     height: 3.04719rem;
-    border-radius: 2rem;
-    background: $brand-color;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 1.5rem;
     margin-top: 2rem;
     padding-top: 10px;
+
+    border-radius: 2rem;
+
+    background: $brand-color;
+    color: rgb(255, 255, 255);
+    
+    text-align: center;
+    line-height: 1.1;
+    font-size: 1.5rem;
+    
 }
 
 .juridique {

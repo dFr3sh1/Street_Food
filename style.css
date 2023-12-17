@@ -187,10 +187,6 @@ td:nth-child(3) {
   padding: 10px;
 }
 
-td p:nth-child(1) {
-  text-align: left;
-}
-
 .about {
   box-sizing: border-box;
   display: flex;
@@ -200,7 +196,7 @@ td p:nth-child(1) {
   align-items: flex-start;
   width: 100%;
   padding: 1rem;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
   text-align: center;
   flex-direction: column;
 }
@@ -594,7 +590,7 @@ template {
 }
 
 /* Style the food images */
-.swiper-slide img {
+.swiper-slide--img {
   display: flex;
   width: 90%;
   height: 150px;
@@ -738,7 +734,7 @@ header #menu {
   padding: 10px 40px;
   margin-bottom: 15%;
   position: relative;
-  top: 1.5rem;
+  margin-top: 1.5rem;
   font-size: 0.8rem;
   font-weight: 100;
   text-align: center;
@@ -817,7 +813,7 @@ header #menu {
   position: relative;
   width: 100%;
   font-size: 0.8rem;
-  top: 6rem;
+  margin-top: 6rem;
   line-height: 1.2rem;
   text-align: left;
   font-weight: 100;
@@ -855,6 +851,10 @@ header #menu {
   color: #F6F6F6;
 }
 
+.plat-name {
+  text-align: left;
+}
+
 .pizza-description {
   position: relative;
   margin-top: -0.7rem;
@@ -875,7 +875,7 @@ header #menu {
   transform: translate(-7%, -66%);
   transition: opacity 0.5s;
   clip-path: inset(70% 0% 0% 0%);
-  top: -1.33rem;
+  margin-top: -1.33rem;
   height: auto;
   border-radius: 50%;
   margin-bottom: 10px;
@@ -925,6 +925,7 @@ header #menu {
 footer p {
   margin-bottom: 30px;
   font-weight: 400;
+  text-align: left;
 }
 
 footer div:nth-child(3) p {
@@ -974,13 +975,14 @@ footer a:active {
   position: relative;
   width: 90%;
   height: 3.04719rem;
+  margin-top: 2rem;
+  padding-top: 10px;
   border-radius: 2rem;
   background: rgb(173, 8, 5);
   color: rgb(255, 255, 255);
   text-align: center;
+  line-height: 1.1;
   font-size: 1.5rem;
-  margin-top: 2rem;
-  padding-top: 10px;
 }
 
 .juridique {
@@ -1000,31 +1002,6 @@ footer a:active {
 /* - - - - - - - - - Carousel displays and Responsive Starts - - - - -  - - - - */
 /* - - - - - - - - - Carousel displays and Responsive Ends - - - - -  - - - - */
 @media screen and (min-width: 600px) {
-  section #carousel-container * {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .carousel-slides {
-    display: flex;
-    /*overflow-x: scroll; /* Allow horizontal scroll on mobile*/
-    /*scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-    /*gap: 20px;*/
-    transition: transform 0.3s ease;
-  }
-  .swiper-custom-nav {
-    z-index: 0;
-    padding: 2em 0;
-    justify-content: space-around;
-  }
-  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 25px;
-  }
-  .subhead {
-    top: 5em;
-  }
   .about {
     display: flex;
     flex-direction: column;
@@ -1032,20 +1009,23 @@ footer a:active {
     align-items: center;
     width: 100%;
   }
-  .about h2 {
-    left: -4rem;
+  .about-title-position {
+    width: 80%;
   }
   .about #vector {
     top: 6.5rem;
     left: 7.5rem;
   }
   .about p {
-    padding-left: 0;
     width: 90%;
+    margin-left: 2rem;
   }
   .about #vector-line {
     left: -16rem;
     top: 7rem;
+  }
+  .subhead {
+    margin-top: 1em;
   }
   .menu-container {
     display: flex;
@@ -1072,15 +1052,16 @@ footer a:active {
   .menu-container .product-baseline {
     font-size: 0.8rem;
   }
-  footer img {
-    width: 16rem;
-    transform: translate(-7%, -50%);
-    clip-path: inset(53% 0% 0% 0%);
-    border-radius: 0%;
+  .footer-img {
+    width: 15.0625rem;
+    transform: translate(-7%, -47%);
+    clip-path: inset(50% 0% 0% 0%);
+    margin-top: -1.33rem;
+  }
+  .footer-title {
+    margin-left: 7rem;
   }
   footer #map {
-    width: auto;
-    left: 0;
     text-decoration: none;
   }
   footer #map:hover {
